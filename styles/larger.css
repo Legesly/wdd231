@@ -1,0 +1,33 @@
+@media (min-width: 40rem) {
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding-inline: 0.9rem;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    .intro section {
+        margin-bottom: 1rem;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
