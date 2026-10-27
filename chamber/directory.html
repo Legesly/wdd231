@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Directory | Minneapolis Chamber of Commerce</title>
+    <meta name="description" content="Find Minneapolis Chamber members, with addresses, phone numbers, websites, and membership levels.">
+    <meta name="author" content="Humphrey Darko">
+    <meta property="og:title" content="Minneapolis Chamber of Commerce Directory">
+    <meta property="og:description" content="Find Minneapolis Chamber members, with addresses, phone numbers, websites, and membership levels.">
+    <meta property="og:image" content="https://legesly.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://legesly.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Minneapolis Chamber of Commerce</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Directory</h1>
+        <div class="view-toggle" role="group" aria-label="Member layout">
+            <button id="grid-button" type="button" class="active" aria-pressed="true">Grid</button>
+            <button id="list-button" type="button" aria-pressed="false">List</button>
+        </div>
+        <div id="directory" class="directory grid"></div>
+    </main>
+    <footer>
+        <address>
+            <strong>Minneapolis Chamber of Commerce</strong>
+            <span>401 N 2nd Avenue, Suite 100</span>
+            <span>Minneapolis, MN 55401</span>
+            <a href="mailto:info@mplschamber.example">info@mplschamber.example</a>
+            <a href="tel:6125550199">(612) 555-0199</a>
+        </address>
+        <ul class="social">
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.8 15.5v-7L15.8 12l-6 3.5z"/>
+                    </svg>
+                    <span>YouTube</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M14.7 10.4 22.4 1.5h-1.8l-6.7 7.7L8.4 1.5H1.8l8.1 11.6L1.8 22.5h1.8l7.1-8.2 5.7 8.2h6.6l-8.3-12.1zm-2.5 2.9-.8-1.2-6.6-9.3h2.8l5.3 7.6.8 1.2 6.9 9.8h-2.8l-5.6-8.1z"/>
+                    </svg>
+                    <span>X</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/humphrey-kwabena-darko-a450b9199/" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4.7 3.3A2.2 2.2 0 1 0 4.7 7.7 2.2 2.2 0 0 0 4.7 3.3zM3 9h3.4v12H3zM9.2 9h3.2v1.6h.1c.4-.8 1.5-1.7 3.2-1.7 3.4 0 4 2.2 4 5.1V21H16.3v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9.2z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+        <div class="project-info">
+            <p>WDD 231 Class Project</p>
+            <p>Humphrey Darko</p>
+            <p>&copy; <span id="currentyear"></span> Minneapolis Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

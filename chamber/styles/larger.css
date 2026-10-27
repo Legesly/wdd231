@@ -1,0 +1,75 @@
+@media (min-width: 40rem) {
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        flex: 1 1 auto;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.25rem;
+    }
+
+    nav a {
+        padding: 0.45rem 0.75rem;
+        color: #12324d;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+        background: #e7eef3;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .brand {
+        flex: 0 1 auto;
+        max-width: 22rem;
+    }
+
+    .directory.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .directory.list .member-card {
+        grid-template-columns: minmax(9rem, 1.2fr) minmax(0, 1.5fr) minmax(8rem, 0.9fr) minmax(0, 1.2fr);
+        align-items: center;
+    }
+
+    .directory.list .member-heading {
+        grid-column: auto;
+    }
+
+    .directory.list .level {
+        margin-top: 0;
+    }
+
+    footer {
+        grid-template-columns: 1.3fr auto 1fr;
+        align-items: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .project-info {
+        text-align: right;
+    }
+}
+
+@media (min-width: 64rem) {
+    .directory.grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

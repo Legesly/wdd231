@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Mill City Roasters",
+        "tagline": "Small-batch coffee from the riverfront",
+        "address": "300 2nd Street S, Minneapolis, MN 55401",
+        "phone": "(612) 555-0142",
+        "email": "hello@millcityroasters.example",
+        "website": "https://millcityroasters.example",
+        "image": "mill-city-roasters.svg",
+        "membership": 3
+    },
+    {
+        "name": "Stone Arch Cycles",
+        "tagline": "Neighborhood bikes, service, and maps",
+        "address": "25 Main Street SE, Minneapolis, MN 55414",
+        "phone": "(612) 555-0174",
+        "email": "ride@stonearchcycles.example",
+        "website": "https://stonearchcycles.example",
+        "image": "stone-arch-cycles.svg",
+        "membership": 2
+    },
+    {
+        "name": "North Loop Provisions",
+        "tagline": "Groceries and pantry goods downtown",
+        "address": "800 Washington Avenue N, Minneapolis, MN 55401",
+        "phone": "(612) 555-0118",
+        "email": "shop@northloopprovisions.example",
+        "website": "https://northloopprovisions.example",
+        "image": "north-loop-provisions.svg",
+        "membership": 1
+    },
+    {
+        "name": "Lakeside Dental",
+        "tagline": "Family dentistry near the lakes",
+        "address": "1420 W Lake Street, Minneapolis, MN 55408",
+        "phone": "(612) 555-0160",
+        "email": "care@lakesidedental.example",
+        "website": "https://lakesidedental.example",
+        "image": "lakeside-dental.svg",
+        "membership": 3
+    },
+    {
+        "name": "Hennepin Bookhouse",
+        "tagline": "New, used, and local-author books",
+        "address": "900 Hennepin Avenue, Minneapolis, MN 55403",
+        "phone": "(612) 555-0133",
+        "email": "read@hennepinbookhouse.example",
+        "website": "https://hennepinbookhouse.example",
+        "image": "hennepin-bookhouse.svg",
+        "membership": 1
+    },
+    {
+        "name": "Midtown Print Studio",
+        "tagline": "Print, signage, and design for local shops",
+        "address": "2929 Chicago Avenue, Minneapolis, MN 55407",
+        "phone": "(612) 555-0188",
+        "email": "print@midtownstudio.example",
+        "website": "https://midtownprintstudio.example",
+        "image": "midtown-print-studio.svg",
+        "membership": 2
+    },
+    {
+        "name": "Riverfront Legal Group",
+        "tagline": "Business counsel for growing companies",
+        "address": "1501 Nicollet Avenue, Minneapolis, MN 55403",
+        "phone": "(612) 555-0104",
+        "email": "office@riverfrontlegal.example",
+        "website": "https://riverfrontlegal.example",
+        "image": "riverfront-legal.svg",
+        "membership": 3
+    },
+    {
+        "name": "Nicollet Floral",
+        "tagline": "Seasonal flowers and event arrangements",
+        "address": "1200 Nicollet Mall, Minneapolis, MN 55403",
+        "phone": "(612) 555-0191",
+        "email": "bloom@nicolletfloral.example",
+        "website": "https://nicolletfloral.example",
+        "image": "nicollet-floral.svg",
+        "membership": 1
+    },
+    {
+        "name": "Warehouse District Fitness",
+        "tagline": "Training, classes, and recovery downtown",
+        "address": "40 N 4th Street, Minneapolis, MN 55401",
+        "phone": "(612) 555-0127",
+        "email": "train@wdfitness.example",
+        "website": "https://wdfitness.example",
+        "image": "warehouse-fitness.svg",
+        "membership": 2
+    }
+]
