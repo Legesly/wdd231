@@ -1,6 +1,6 @@
 const latitude = 44.9778;
 const longitude = -93.265;
-const apiKey = "";
+const apiKey = "6f955df3c75a6885ddbb775af7a54e1c";
 
 const currentWeather = document.querySelector("#current-weather");
 const forecastHeading = document.querySelector("#forecast-heading");
