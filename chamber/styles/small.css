@@ -523,3 +523,179 @@ address a:focus-visible,
 .current-summary span {
     font-weight: 700;
 }
+
+.join-intro {
+    max-width: 40rem;
+    margin-bottom: 1rem;
+}
+
+.join-layout,
+.level-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.application,
+.level-card,
+.application-summary,
+dialog {
+    background: #ffffff;
+    color: #1a2332;
+    border: 1px solid #d5dee6;
+    border-top: 4px solid #12324d;
+}
+
+.application,
+.application-summary {
+    padding: 1rem;
+}
+
+.application label {
+    display: grid;
+    gap: 0.3rem;
+    margin-bottom: 0.85rem;
+    font-weight: 700;
+}
+
+.application input,
+.application select,
+.application textarea {
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #5e6e7a;
+    border-radius: 0.3rem;
+    background: #ffffff;
+    color: #1a2332;
+    font-weight: 400;
+}
+
+.application input::placeholder {
+    color: #3d4d5c;
+}
+
+.application button {
+    min-height: 2.75rem;
+    padding: 0.55rem 1rem;
+    border: 0;
+    border-radius: 0.35rem;
+    background: #12324d;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.level-cards h2,
+.level-card h3,
+dialog h2 {
+    margin: 0;
+}
+
+.level-cards h2 {
+    font-size: 1.35rem;
+}
+
+.level-card {
+    padding: 0.9rem;
+    animation: card-arrive 0.7s ease both;
+}
+
+.level-card:nth-child(2) {
+    animation-delay: 0.12s;
+}
+
+.level-card:nth-child(3) {
+    animation-delay: 0.24s;
+}
+
+.level-card:nth-child(4) {
+    animation-delay: 0.36s;
+}
+
+.level-card:nth-child(5) {
+    animation-delay: 0.48s;
+}
+
+.level-card h3 {
+    font-size: 1.1rem;
+}
+
+.level-card.np {
+    border-top-color: #12324d;
+}
+
+.level-card.bronze {
+    border-top-color: #8a5a2b;
+}
+
+.level-card.silver {
+    border-top-color: #5e6e7a;
+}
+
+.level-card.gold {
+    border-top-color: #8a6a12;
+}
+
+.benefits-link {
+    display: inline-block;
+    margin-top: 0.45rem;
+    font-weight: 700;
+}
+
+dialog {
+    width: min(32rem, calc(100% - 2rem));
+    padding: 1.25rem;
+}
+
+dialog::backdrop {
+    background: rgb(18 50 77 / 55%);
+}
+
+dialog ul {
+    margin: 0.75rem 0 1rem;
+    padding-left: 1.2rem;
+}
+
+.close-dialog {
+    min-height: 2.75rem;
+    padding: 0.45rem 0.9rem;
+    border: 2px solid #12324d;
+    border-radius: 0.35rem;
+    background: #ffffff;
+    color: #12324d;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.application-summary {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 0.35rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.application-summary dt {
+    font-weight: 700;
+}
+
+.application-summary dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+@keyframes card-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .level-card {
+        animation: none;
+    }
+}
