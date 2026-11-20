@@ -699,3 +699,109 @@ dialog ul {
         animation: none;
     }
 }
+
+.discover-intro {
+    max-width: 42rem;
+    margin-top: 0;
+}
+
+.visit-message {
+    margin: 0 0 1rem;
+    padding: 0.75rem 1rem;
+    background: #12324d;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "stone"
+        "falls"
+        "garden"
+        "mill"
+        "guthrie"
+        "target"
+        "harriet"
+        "weisman";
+}
+
+.area-stone { grid-area: stone; }
+.area-falls { grid-area: falls; }
+.area-garden { grid-area: garden; }
+.area-mill { grid-area: mill; }
+.area-guthrie { grid-area: guthrie; }
+.area-target { grid-area: target; }
+.area-harriet { grid-area: harriet; }
+.area-weisman { grid-area: weisman; }
+
+.discover-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    min-width: 0;
+    padding: 0.85rem;
+    background: #ffffff;
+    color: #1a2332;
+    border: 1px solid #d5dee6;
+    border-top: 4px solid #12324d;
+}
+
+.discover-card h2 {
+    margin: 0;
+    color: #12324d;
+    font-size: 1.3rem;
+    line-height: 1.25;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.discover-card p {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.discover-card button {
+    align-self: flex-start;
+    min-height: 2.75rem;
+    margin-top: 0.25rem;
+    padding: 0.45rem 0.9rem;
+    border: 0;
+    border-radius: 0.35rem;
+    background: #12324d;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.discover-card button:focus-visible {
+    outline: 3px solid #f0d48a;
+    outline-offset: 2px;
+}
+
+.photo-credits {
+    margin: 1.25rem 0 0;
+    padding-left: 1.15rem;
+    color: #1a2332;
+    font-size: 0.9rem;
+}
+
+.photo-credits a {
+    font-weight: 700;
+}

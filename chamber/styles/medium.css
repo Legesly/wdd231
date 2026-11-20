@@ -1,0 +1,45 @@
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+            "stone stone falls"
+            "garden mill mill"
+            "guthrie guthrie target"
+            "harriet weisman weisman";
+    }
+
+    .discover-card figure {
+        overflow: hidden;
+    }
+
+    .discover-card img {
+        transition: transform 0.35s ease, filter 0.35s ease;
+    }
+}
+
+@media (min-width: 641px) and (hover: hover) {
+    .discover-card img:hover {
+        transform: scale(1.06);
+        filter: brightness(1.08) saturate(1.15);
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas:
+            "stone stone falls garden"
+            "mill guthrie guthrie target"
+            "harriet harriet weisman weisman";
+    }
+}
+
+@media (min-width: 641px) and (prefers-reduced-motion: reduce) {
+    .discover-card img {
+        transition: none;
+    }
+
+    .discover-card img:hover {
+        transform: none;
+    }
+}
