@@ -1,0 +1,231 @@
+:root {
+    --lake: #0b3a4a;
+    --pine: #1b5e45;
+    --sand: #f6f1e7;
+    --ink: #1c2421;
+    --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--sand);
+    color: var(--ink);
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--pine);
+}
+
+a:focus-visible,
+:focus-visible {
+    outline: 3px solid var(--pine);
+    outline-offset: 3px;
+}
+
+.page {
+    width: min(52rem, calc(100% - 2rem));
+    margin: 1.5rem auto 2.5rem;
+}
+
+.banner,
+.panel,
+.site-footer {
+    background: var(--white);
+    border-left: 6px solid var(--pine);
+    padding: 1.25rem 1.25rem 1.4rem;
+}
+
+.banner {
+    background: var(--lake);
+    color: var(--sand);
+    border-left-color: var(--pine);
+    margin-bottom: 1.25rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.35rem;
+    color: var(--sand);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+.font-sample-heading {
+    font-family: "Libre Baskerville", Georgia, serif;
+    color: var(--lake);
+    line-height: 1.25;
+}
+
+.banner h1,
+.banner p {
+    color: var(--sand);
+}
+
+h1 {
+    margin: 0 0 0.4rem;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.55rem;
+}
+
+.lede {
+    margin: 0;
+    max-width: 38rem;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+}
+
+.panel p,
+.panel li,
+.panel dd {
+    margin-top: 0;
+}
+
+.panel > p:last-child,
+.panel ul,
+.colors,
+.fonts {
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 1.2rem;
+}
+
+.colors,
+.fonts {
+    display: grid;
+    gap: 0.9rem;
+    padding: 0;
+    list-style: none;
+}
+
+.colors li,
+.fonts li {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.swatch {
+    display: grid;
+    align-content: end;
+    min-height: 4.5rem;
+    padding: 0.7rem 0.8rem;
+    font-weight: 700;
+}
+
+.swatch span {
+    display: block;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.lake {
+    background: var(--lake);
+    color: var(--sand);
+}
+
+.pine {
+    background: var(--pine);
+    color: var(--white);
+}
+
+.sand {
+    background: var(--sand);
+    color: var(--ink);
+    border: 1px solid var(--lake);
+}
+
+.ink {
+    background: var(--ink);
+    color: var(--sand);
+}
+
+.white {
+    background: var(--white);
+    color: var(--ink);
+    border: 1px solid var(--pine);
+}
+
+.font-sample-heading,
+.font-name-body {
+    margin: 0;
+    font-size: 1.45rem;
+}
+
+.font-name-body {
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    font-weight: 700;
+    color: var(--lake);
+}
+
+.font-sample-body {
+    margin: 0.2rem 0 0;
+}
+
+.wireframes {
+    display: grid;
+    gap: 1.25rem;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 0.4rem;
+    font-weight: 700;
+    color: var(--lake);
+}
+
+.site-footer {
+    margin-top: 1rem;
+    background: var(--lake);
+    color: var(--sand);
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (min-width: 40rem) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .colors li,
+    .fonts li {
+        grid-template-columns: 11rem 1fr;
+        align-items: center;
+    }
+
+    .wireframes {
+        grid-template-columns: 0.72fr 1.28fr;
+        align-items: start;
+    }
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="largeTitle">
+  <title id="largeTitle">Wide-screen home page wireframe</title>
+  <rect width="960" height="560" fill="#ffffff"/>
+  <rect x="8" y="8" width="944" height="544" fill="none" stroke="#222222" stroke-width="2"/>
+  <rect x="24" y="24" width="912" height="56" fill="none" stroke="#222222"/>
+  <rect x="40" y="38" width="28" height="28" fill="#eeeeee" stroke="#222222"/>
+  <text x="80" y="58" font-family="Arial, sans-serif" font-size="16" fill="#222222">Site name</text>
+  <text x="620" y="58" font-family="Arial, sans-serif" font-size="15" fill="#222222">Home</text>
+  <text x="700" y="58" font-family="Arial, sans-serif" font-size="15" fill="#222222">Trails</text>
+  <text x="790" y="58" font-family="Arial, sans-serif" font-size="15" fill="#222222">Planner</text>
+  <rect x="24" y="100" width="440" height="220" fill="#eeeeee" stroke="#222222"/>
+  <text x="244" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#222222">Hero image</text>
+  <text x="488" y="140" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#222222">Welcome heading</text>
+  <rect x="488" y="160" width="400" height="10" fill="#dddddd"/>
+  <rect x="488" y="180" width="360" height="10" fill="#dddddd"/>
+  <rect x="488" y="200" width="300" height="10" fill="#dddddd"/>
+  <rect x="488" y="236" width="160" height="40" fill="none" stroke="#222222"/>
+  <text x="568" y="261" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#222222">Call to action</text>
+  <text x="24" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#222222">Featured trails</text>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#222222">
+    <rect x="24" y="376" width="292" height="130" fill="none" stroke="#222222"/>
+    <rect x="36" y="388" width="268" height="64" fill="#eeeeee" stroke="#222222"/>
+    <text x="170" y="480" text-anchor="middle">Trail name</text>
+    <rect x="334" y="376" width="292" height="130" fill="none" stroke="#222222"/>
+    <rect x="346" y="388" width="268" height="64" fill="#eeeeee" stroke="#222222"/>
+    <text x="480" y="480" text-anchor="middle">Trail name</text>
+    <rect x="644" y="376" width="292" height="130" fill="none" stroke="#222222"/>
+    <rect x="656" y="388" width="268" height="64" fill="#eeeeee" stroke="#222222"/>
+    <text x="790" y="480" text-anchor="middle">Trail name</text>
+  </g>
+  <text x="480" y="534" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#222222">Footer</text>
+</svg>
