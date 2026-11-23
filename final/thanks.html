@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thank You | Minneapolis Lake and Trail Guide</title>
+    <meta name="description" content="Your trail suggestion for the Minneapolis Lake and Trail Guide was received. The details you sent are shown on this page.">
+    <meta name="author" content="Humphrey Darko">
+    <meta property="og:title" content="Thanks for the Minneapolis trail suggestion">
+    <meta property="og:description" content="Your trail suggestion for the Minneapolis Lake and Trail Guide was received. The details you sent are shown on this page.">
+    <meta property="og:image" content="https://legesly.github.io/wdd231/final/images/og-image.jpg">
+    <meta property="og:url" content="https://legesly.github.io/wdd231/final/thanks.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Lake and trail mark" width="64" height="64">
+            <span>Minneapolis Lake and Trail Guide</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Thank you</h1>
+        <p class="intro">Your trail suggestion was received. Here is what you sent.</p>
+        <dl class="summary">
+            <dt>Name</dt>
+            <dd id="result-name"></dd>
+            <dt>Email</dt>
+            <dd id="result-email"></dd>
+            <dt>Trail name</dt>
+            <dd id="result-trail"></dd>
+            <dt>Neighborhood</dt>
+            <dd id="result-neighborhood"></dd>
+            <dt>Note</dt>
+            <dd id="result-note"></dd>
+            <dt>Submitted</dt>
+            <dd id="result-timestamp"></dd>
+        </dl>
+        <p><a class="button" href="index.html">Return home</a></p>
+    </main>
+    <footer>
+        <p><strong>Minneapolis Lake and Trail Guide</strong></p>
+        <p>Humphrey Darko · Minneapolis, Minnesota</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trails.html">Browse trails</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+        <p>&copy; <span id="currentyear"></span> Humphrey Darko</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

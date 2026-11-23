@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attributions | Minneapolis Lake and Trail Guide</title>
+    <meta name="description" content="Sources for the Minneapolis Lake and Trail Guide, including the typefaces and the original drawings used on the site.">
+    <meta name="author" content="Humphrey Darko">
+    <meta property="og:title" content="Sources for the lake and trail guide">
+    <meta property="og:description" content="Sources for the Minneapolis Lake and Trail Guide, including the typefaces and the original drawings used on the site.">
+    <meta property="og:image" content="https://legesly.github.io/wdd231/final/images/og-image.jpg">
+    <meta property="og:url" content="https://legesly.github.io/wdd231/final/attributions.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Lake and trail mark" width="64" height="64">
+            <span>Minneapolis Lake and Trail Guide</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Attributions</h1>
+        <p class="intro">The words and drawings on this guide were made for the project. The typefaces come from Google Fonts.</p>
+        <section>
+            <h2>Typefaces</h2>
+            <ul>
+                <li>Libre Baskerville and Source Sans 3 are served by <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Drawings</h2>
+            <ul>
+                <li>The logo, the home illustration, and the path drawing are original artwork for this site.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Trail facts</h2>
+            <p>Distances and path descriptions are short guides for choosing a walk or ride. They are not an official Minneapolis Park and Recreation Board map.</p>
+        </section>
+    </main>
+    <footer>
+        <p><strong>Minneapolis Lake and Trail Guide</strong></p>
+        <p>Humphrey Darko · Minneapolis, Minnesota</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trails.html">Browse trails</a></li>
+            <li><a href="planner.html">Open the planner</a></li>
+        </ul>
+        <p>&copy; <span id="currentyear"></span> Humphrey Darko</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

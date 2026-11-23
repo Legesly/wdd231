@@ -1,0 +1,429 @@
+html {
+    background: #f6f1e7;
+}
+
+body {
+    max-width: 72rem;
+    margin: 0 auto;
+    background: #f6f1e7;
+    color: #1c2421;
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #1b5e45;
+}
+
+header,
+main,
+footer {
+    padding-inline: 1rem;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    background: #0b3a4a;
+    padding-block: 0.75rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex: 1 1 auto;
+    max-width: calc(100% - 3.75rem);
+    min-width: 0;
+    color: #f6f1e7;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: 0 0 auto;
+}
+
+.brand span {
+    min-width: 0;
+    line-height: 1.15;
+}
+
+.menu-button {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    flex: 0 0 auto;
+    border: 2px solid #f6f1e7;
+    border-radius: 0.4rem;
+    background: #0b3a4a;
+    color: #f6f1e7;
+    cursor: pointer;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    display: block;
+    width: 1.25rem;
+    height: 2px;
+    background: currentColor;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -6px;
+}
+
+.menu-icon::after {
+    top: 6px;
+}
+
+.menu-button[aria-expanded="true"] .menu-icon {
+    background: transparent;
+}
+
+.menu-button[aria-expanded="true"] .menu-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu-button[aria-expanded="true"] .menu-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav {
+    display: none;
+    flex: 1 0 100%;
+    margin-inline: -1rem;
+    padding: 0.25rem 1rem;
+    background: #082f3c;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 0.25rem;
+    color: #f6f1e7;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+nav a[aria-current="page"] {
+    border-bottom-color: #f6f1e7;
+}
+
+main {
+    padding-block: 1.25rem 2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Libre Baskerville", Georgia, serif;
+    color: #0b3a4a;
+    line-height: 1.25;
+}
+
+h1 {
+    margin: 0 0 0.6rem;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.45rem;
+}
+
+.lede,
+.intro {
+    max-width: 40rem;
+    margin-top: 0;
+}
+
+.hero {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero-copy h1,
+.hero-copy p {
+    color: #1c2421;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+
+.button,
+.trail-card a,
+.trail-card button,
+.choice,
+.saved-card button,
+.application button,
+.close-dialog {
+    display: inline-block;
+    min-height: 2.75rem;
+    padding: 0.55rem 0.9rem;
+    border: 0;
+    border-radius: 0.35rem;
+    background: #1b5e45;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.secondary,
+.close-dialog {
+    background: #ffffff;
+    color: #0b3a4a;
+    border: 2px solid #0b3a4a;
+}
+
+.visit-message {
+    margin: 0 0 1.25rem;
+    padding: 0.75rem 1rem;
+    background: #0b3a4a;
+    color: #f6f1e7;
+    font-weight: 700;
+}
+
+.steps,
+.trail-grid,
+.planner-layout,
+.choice-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.steps {
+    margin-bottom: 1.5rem;
+}
+
+.step,
+.trail-card,
+.saved-card,
+.application,
+.summary,
+dialog {
+    background: #ffffff;
+    border: 1px solid #d9d0c2;
+    border-top: 4px solid #1b5e45;
+    padding: 0.9rem;
+}
+
+.step h2,
+.step h3,
+.trail-card h2,
+.trail-card h3,
+.saved-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.neighborhood {
+    margin: 0 0 0.2rem;
+    color: #1b5e45;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin: 0.45rem 0;
+    color: #0b3a4a;
+    font-weight: 700;
+}
+
+.sketch {
+    margin: 1.5rem 0 0;
+}
+
+.sketch img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #d9d0c2;
+}
+
+.sketch figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0 0 1rem;
+}
+
+.filters button {
+    min-height: 2.75rem;
+    padding: 0.45rem 0.8rem;
+    border: 2px solid #0b3a4a;
+    border-radius: 0.35rem;
+    background: #ffffff;
+    color: #0b3a4a;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background: #0b3a4a;
+    color: #f6f1e7;
+}
+
+#trail-count {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.planner-layout {
+    margin-bottom: 1.25rem;
+}
+
+.choice-grid {
+    grid-template-columns: 1fr;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    text-align: left;
+}
+
+.choice.active {
+    background: #0b3a4a;
+}
+
+.empty {
+    margin: 0;
+}
+
+.application label {
+    display: grid;
+    gap: 0.3rem;
+    margin-bottom: 0.85rem;
+    font-weight: 700;
+}
+
+.application input::placeholder {
+    color: #3d4f49;
+    opacity: 1;
+}
+
+.application input,
+.application textarea {
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #3d4f49;
+    border-radius: 0.3rem;
+    background: #ffffff;
+    color: #1c2421;
+    font: inherit;
+    font-weight: 400;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: minmax(8rem, 11rem) minmax(0, 1fr);
+    gap: 0.4rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.summary dt {
+    font-weight: 700;
+}
+
+.summary dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+dialog {
+    width: min(32rem, calc(100% - 2rem));
+    color: #1c2421;
+}
+
+dialog::backdrop {
+    background: rgb(11 58 74 / 55%);
+}
+
+dialog p {
+    margin: 0.35rem 0;
+}
+
+footer {
+    display: grid;
+    gap: 0.35rem;
+    background: #0b3a4a;
+    color: #f6f1e7;
+    padding-block: 1.25rem;
+}
+
+footer a {
+    color: #f6f1e7;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    margin: 0.35rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+:focus-visible {
+    outline: 3px solid #1b5e45;
+    outline-offset: 2px;
+}
+
+header :focus-visible,
+footer :focus-visible,
+.filters button.active:focus-visible,
+.choice.active:focus-visible {
+    outline-color: #f6f1e7;
+}

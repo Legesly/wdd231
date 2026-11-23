@@ -1,0 +1,182 @@
+[
+    {
+        "id": "harriet",
+        "name": "Lake Harriet",
+        "neighborhood": "Linden Hills",
+        "miles": 2.8,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A full loop around the lake, with the bandshell lawn on the north shore and a wide path the whole way.",
+        "featured": true
+    },
+    {
+        "id": "bde-maka-ska",
+        "name": "Bde Maka Ska",
+        "neighborhood": "Calhoun-Isles",
+        "miles": 3.1,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "The longest lake loop in the Chain of Lakes, with separate spaces for people walking and people riding.",
+        "featured": true
+    },
+    {
+        "id": "isles",
+        "name": "Lake of the Isles",
+        "neighborhood": "Lowry Hill",
+        "miles": 2.6,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A quieter loop with two islands, footbridges, and a connection north toward Cedar Lake.",
+        "featured": true
+    },
+    {
+        "id": "cedar",
+        "name": "Cedar Lake",
+        "neighborhood": "Bryn Mawr",
+        "miles": 1.7,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A shorter lake loop on the west side, linked to the Isles path and the Cedar Lake Trail.",
+        "featured": false
+    },
+    {
+        "id": "brownie",
+        "name": "Brownie Lake",
+        "neighborhood": "Cedar-Isles-Dean",
+        "miles": 0.5,
+        "surface": "Crushed limestone",
+        "activity": "Walk",
+        "description": "A small loop at the north end of Cedar Lake, useful when you only have time for a short walk.",
+        "featured": false
+    },
+    {
+        "id": "nokomis",
+        "name": "Lake Nokomis",
+        "neighborhood": "Nokomis",
+        "miles": 2.7,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A south-side lake loop with a beach, a community center, and a path that stays close to the water.",
+        "featured": false
+    },
+    {
+        "id": "hiawatha",
+        "name": "Lake Hiawatha",
+        "neighborhood": "Nokomis",
+        "miles": 1.6,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A compact loop beside the golf course, easy to pair with a longer ride on Minnehaha Creek.",
+        "featured": false
+    },
+    {
+        "id": "minnehaha-park",
+        "name": "Minnehaha Park",
+        "neighborhood": "Longfellow",
+        "miles": 1.2,
+        "surface": "Paved",
+        "activity": "Walk",
+        "description": "Paths around the falls and down the glen toward the Mississippi, with stairs and a gentler upper route.",
+        "featured": false
+    },
+    {
+        "id": "minnehaha-creek",
+        "name": "Minnehaha Creek",
+        "neighborhood": "Nokomis",
+        "miles": 3.4,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A creek path from Lake Nokomis toward the falls, shaded in places and mostly flat.",
+        "featured": false
+    },
+    {
+        "id": "stone-arch",
+        "name": "Stone Arch Bridge",
+        "neighborhood": "Downtown",
+        "miles": 0.6,
+        "surface": "Paved",
+        "activity": "Walk",
+        "description": "A short river crossing on a former railroad bridge, with the downtown skyline on one side.",
+        "featured": false
+    },
+    {
+        "id": "west-river",
+        "name": "West River Parkway",
+        "neighborhood": "Downtown",
+        "miles": 4.2,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A parkway path along the west bank of the Mississippi, from the Stone Arch Bridge toward the falls.",
+        "featured": false
+    },
+    {
+        "id": "east-river",
+        "name": "East River Flats",
+        "neighborhood": "University",
+        "miles": 1.8,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A riverside path below the University of Minnesota, with a view back toward downtown.",
+        "featured": false
+    },
+    {
+        "id": "greenway",
+        "name": "Midtown Greenway",
+        "neighborhood": "Whittier",
+        "miles": 5.5,
+        "surface": "Paved",
+        "activity": "Bike",
+        "description": "A former rail line through south Minneapolis, built for bikes and kept separate from car traffic.",
+        "featured": false
+    },
+    {
+        "id": "wirth",
+        "name": "Theodore Wirth",
+        "neighborhood": "Near North",
+        "miles": 2.4,
+        "surface": "Crushed limestone",
+        "activity": "Walk or bike",
+        "description": "Wooded park paths around Wirth Lake, with more hills than the chain-of-lakes loops.",
+        "featured": false
+    },
+    {
+        "id": "victory",
+        "name": "Victory Memorial Parkway",
+        "neighborhood": "Camden",
+        "miles": 3.8,
+        "surface": "Paved",
+        "activity": "Walk or bike",
+        "description": "A tree-lined parkway in north Minneapolis, with a long straight path and few street crossings.",
+        "featured": false
+    },
+    {
+        "id": "powderhorn",
+        "name": "Powderhorn Lake",
+        "neighborhood": "Powderhorn",
+        "miles": 1.1,
+        "surface": "Paved",
+        "activity": "Walk",
+        "description": "A neighborhood loop around the lake in Powderhorn Park, flat and easy to reach on foot.",
+        "featured": false
+    },
+    {
+        "id": "loring",
+        "name": "Loring Park",
+        "neighborhood": "Loring Park",
+        "miles": 0.8,
+        "surface": "Paved",
+        "activity": "Walk",
+        "description": "A short downtown park loop around the pond, close to the sculpture garden.",
+        "featured": false
+    },
+    {
+        "id": "nicollet-island",
+        "name": "Nicollet Island",
+        "neighborhood": "Nicollet Island",
+        "miles": 0.7,
+        "surface": "Paved",
+        "activity": "Walk",
+        "description": "A small island walk in the Mississippi, connected to downtown by the Hennepin Avenue bridge.",
+        "featured": false
+    }
+]

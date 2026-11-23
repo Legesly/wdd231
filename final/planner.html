@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planner | Minneapolis Lake and Trail Guide</title>
+    <meta name="description" content="Save Minneapolis trails in this browser and send a suggestion for a lake path or neighborhood route to add.">
+    <meta name="author" content="Humphrey Darko">
+    <meta property="og:title" content="Plan a Minneapolis lake or trail visit">
+    <meta property="og:description" content="Save Minneapolis trails in this browser and send a suggestion for a lake path or neighborhood route to add.">
+    <meta property="og:image" content="https://legesly.github.io/wdd231/final/images/og-image.jpg">
+    <meta property="og:url" content="https://legesly.github.io/wdd231/final/planner.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/planner.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Lake and trail mark" width="64" height="64">
+            <span>Minneapolis Lake and Trail Guide</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="planner.html" aria-current="page">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Planner</h1>
+        <p class="intro">Save trails on this device, then send a suggestion if a path you use is missing from the guide.</p>
+        <div class="planner-layout">
+            <section aria-labelledby="saved-heading">
+                <h2 id="saved-heading">Saved trails</h2>
+                <div id="saved-trails"></div>
+            </section>
+            <form class="application" method="get" action="thanks.html">
+                <h2>Suggest a trail</h2>
+                <label>Your name
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+                </label>
+                <label>Trail name
+                    <input type="text" name="trail" autocomplete="off" required>
+                </label>
+                <label>Neighborhood
+                    <input type="text" name="neighborhood" autocomplete="address-level2" required>
+                </label>
+                <label>Note
+                    <textarea name="note" rows="4"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit">Send suggestion</button>
+            </form>
+        </div>
+        <section aria-labelledby="choices-heading">
+            <h2 id="choices-heading">Choose favorites</h2>
+            <div id="trail-choices" class="choice-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <p><strong>Minneapolis Lake and Trail Guide</strong></p>
+        <p>Humphrey Darko · Minneapolis, Minnesota</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="trails.html">Browse trails</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+        <p>&copy; <span id="currentyear"></span> Humphrey Darko</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

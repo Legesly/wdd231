@@ -1,0 +1,66 @@
+@media (min-width: 40rem) {
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        flex: 1 1 auto;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.25rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav a {
+        padding: 0.45rem 0.75rem;
+    }
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    .brand {
+        flex: 0 1 auto;
+        max-width: 22rem;
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        align-items: center;
+    }
+
+    .steps,
+    .trail-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .planner-layout {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        align-items: start;
+    }
+
+    .choice-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 64rem) {
+    .trail-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 40rem) and (max-width: 63.99rem) {
+    .trail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

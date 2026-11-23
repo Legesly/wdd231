@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trails | Minneapolis Lake and Trail Guide</title>
+    <meta name="description" content="Browse Minneapolis lake loops and city trails. Filter by paved or crushed limestone paths and open details for each place.">
+    <meta name="author" content="Humphrey Darko">
+    <meta property="og:title" content="Minneapolis trails and lake loops">
+    <meta property="og:description" content="Browse Minneapolis lake loops and city trails. Filter by paved or crushed limestone paths and open details for each place.">
+    <meta property="og:image" content="https://legesly.github.io/wdd231/final/images/og-image.jpg">
+    <meta property="og:url" content="https://legesly.github.io/wdd231/final/trails.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/trails.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Lake and trail mark" width="64" height="64">
+            <span>Minneapolis Lake and Trail Guide</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html" aria-current="page">Trails</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Trails</h1>
+        <p class="intro">Eighteen places in Minneapolis. Each card shows the neighborhood, distance, path surface, and whether it suits a walk, a bike ride, or both.</p>
+        <p id="trail-count">Loading places.</p>
+        <div id="filters" class="filters" role="group" aria-label="Filter by path surface">
+            <button type="button" class="active" data-surface="all" aria-pressed="true">All</button>
+            <button type="button" data-surface="Paved" aria-pressed="false">Paved</button>
+            <button type="button" data-surface="Crushed limestone" aria-pressed="false">Crushed limestone</button>
+        </div>
+        <div id="trail-list" class="trail-grid"></div>
+        <dialog id="trail-dialog" aria-labelledby="dialog-title">
+            <h2 id="dialog-title"></h2>
+            <p><strong>Neighborhood: </strong><span id="dialog-neighborhood"></span></p>
+            <p><strong>Distance: </strong><span id="dialog-miles"></span></p>
+            <p><strong>Surface: </strong><span id="dialog-surface"></span></p>
+            <p><strong>Good for: </strong><span id="dialog-activity"></span></p>
+            <p id="dialog-description"></p>
+            <button id="close-dialog" class="close-dialog" type="button">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <p><strong>Minneapolis Lake and Trail Guide</strong></p>
+        <p>Humphrey Darko · Minneapolis, Minnesota</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="planner.html">Open the planner</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+        <p>&copy; <span id="currentyear"></span> Humphrey Darko</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

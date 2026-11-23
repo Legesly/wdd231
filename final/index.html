@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Minneapolis Lake and Trail Guide</title>
+    <meta name="description" content="Find a lake loop or city trail in Minneapolis, then check the distance, neighborhood, and path surface before you head out.">
+    <meta name="author" content="Humphrey Darko">
+    <meta property="og:title" content="Minneapolis Lake and Trail Guide">
+    <meta property="og:description" content="Find a lake loop or city trail in Minneapolis, then check the distance, neighborhood, and path surface before you head out.">
+    <meta property="og:image" content="https://legesly.github.io/wdd231/final/images/og-image.jpg">
+    <meta property="og:url" content="https://legesly.github.io/wdd231/final/index.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Lake and trail mark" width="64" height="64">
+            <span>Minneapolis Lake and Trail Guide</span>
+        </a>
+        <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero.svg" alt="A drawn lake, shoreline trees, and a walking path" width="800" height="500">
+            <div class="hero-copy">
+                <h1>Minneapolis Lake and Trail Guide</h1>
+                <p class="lede">Pick a nearby lake loop or city trail. Each place lists the neighborhood, distance, and path surface so you can choose a walk or ride that fits the time you have.</p>
+                <button id="open-guide" class="button" type="button">How to use this guide</button>
+            </div>
+        </section>
+        <p id="visit-message" class="visit-message"></p>
+        <section aria-labelledby="steps-heading">
+            <h2 id="steps-heading">Three steps</h2>
+            <div class="steps">
+                <article class="step">
+                    <h3>Look</h3>
+                    <p>Start with a featured lake, or open the full trail list.</p>
+                </article>
+                <article class="step">
+                    <h3>Compare</h3>
+                    <p>Check the miles, the neighborhood, and whether the path is paved.</p>
+                </article>
+                <article class="step">
+                    <h3>Save</h3>
+                    <p>Keep favorites in the planner. They stay in this browser.</p>
+                </article>
+            </div>
+        </section>
+        <section aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured trails</h2>
+            <div id="featured" class="trail-grid"></div>
+        </section>
+        <figure class="sketch">
+            <img src="images/path.svg" alt="A simple drawing of a path beside a lake" width="640" height="240" loading="lazy">
+            <figcaption>Original drawing for the Minneapolis Lake and Trail Guide.</figcaption>
+        </figure>
+        <dialog id="guide-dialog" aria-labelledby="guide-heading">
+            <h2 id="guide-heading">How to use this guide</h2>
+            <p>The home page highlights three lake loops. The Trails page lists every place, and you can filter by path surface.</p>
+            <p>Open a trail for the neighborhood, distance, surface, and who the path is for.</p>
+            <p>On the Planner page, save favorites and send a trail suggestion. Saved places stay on this device.</p>
+            <button id="close-guide" class="close-dialog" type="button">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <p><strong>Minneapolis Lake and Trail Guide</strong></p>
+        <p>Humphrey Darko · Minneapolis, Minnesota</p>
+        <ul class="footer-links">
+            <li><a href="trails.html">Browse trails</a></li>
+            <li><a href="planner.html">Open the planner</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+        <p>&copy; <span id="currentyear"></span> Humphrey Darko</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
