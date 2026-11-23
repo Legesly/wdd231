@@ -88,5 +88,65 @@
         "website": "https://wdfitness.example",
         "image": "warehouse-fitness.svg",
         "membership": 2
+    },
+    {
+        "name": "Gold Medal Bakery",
+        "tagline": "Bread, rolls, and morning pastries",
+        "address": "200 Washington Avenue S, Minneapolis, MN 55401",
+        "phone": "(612) 555-0155",
+        "email": "oven@goldmedalbakery.example",
+        "website": "https://goldmedalbakery.example",
+        "image": "gold-medal-bakery.svg",
+        "membership": 3
+    },
+    {
+        "name": "Uptown Frame Shop",
+        "tagline": "Custom frames for local art and photos",
+        "address": "3000 Hennepin Avenue, Minneapolis, MN 55408",
+        "phone": "(612) 555-0148",
+        "email": "frame@uptownframeshop.example",
+        "website": "https://uptownframeshop.example",
+        "image": "uptown-frame-shop.svg",
+        "membership": 1
+    },
+    {
+        "name": "Cedar Riverside Market",
+        "tagline": "Groceries and spices for the neighborhood",
+        "address": "1500 S 6th Street, Minneapolis, MN 55454",
+        "phone": "(612) 555-0166",
+        "email": "hello@cedarrivermarket.example",
+        "website": "https://cedarrivermarket.example",
+        "image": "cedar-riverside-market.svg",
+        "membership": 2
+    },
+    {
+        "name": "Northeast Pottery",
+        "tagline": "Handmade cups, bowls, and classes",
+        "address": "1300 2nd Street NE, Minneapolis, MN 55413",
+        "phone": "(612) 555-0171",
+        "email": "studio@northeastpottery.example",
+        "website": "https://northeastpottery.example",
+        "image": "northeast-pottery.svg",
+        "membership": 1
+    },
+    {
+        "name": "Lyndale Bike Cafe",
+        "tagline": "Coffee, bikes, and a neighborhood table",
+        "address": "3348 Lyndale Avenue S, Minneapolis, MN 55408",
+        "phone": "(612) 555-0182",
+        "email": "ride@lyndalebikecafe.example",
+        "website": "https://lyndalebikecafe.example",
+        "image": "lyndale-bike-cafe.svg",
+        "membership": 3
+    },
+    {
+        "name": "Powderhorn Music",
+        "tagline": "Instruments, lessons, and repairs",
+        "address": "3440 Chicago Avenue, Minneapolis, MN 55407",
+        "phone": "(612) 555-0194",
+        "email": "play@powderhornmusic.example",
+        "website": "https://powderhornmusic.example",
+        "image": "powderhorn-music.svg",
+        "membership": 2
     }
 ]
